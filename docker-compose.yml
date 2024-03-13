@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+      app:
+                   
+        build: .
+                          
+                # Specifies the Dockerfile to build the service. 
+                # The dot (.) represents the current directory where the Dockerfile resides.
+                         
+        ports:
+                          
+                # Specifies port mappings for the service.
+           - "81:3000"
+                                        
+                # Maps port 80 of the host to port 3000 of the container.
+                # Traffic coming to port 80 on the host machine will be forwarded to port 3000 on the container.
+        
